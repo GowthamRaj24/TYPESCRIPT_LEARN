@@ -4,6 +4,8 @@ main = "src/index.ts"
 compatibility_date = "2024-12-05"
 compatibility_flags = ["nodejs_compat"]
 
+
+
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
@@ -112,3 +114,7 @@ enabled = true
 # [[vectorize]]
 # binding = "MY_INDEX"
 # index_name = "my-index"
+
+[vars]
+DATABASE_URL="prisma://accelerate.prisma-data.net/?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlfa2V5IjoiODcwNTcyODUtYzhkNC00ZWVkLWFjYTktZjEyMTQ4YWMzZDEwIiwidGVuYW50X2lkIjoiYjJkNmJkYWQxMmFhYzkwODM3NDIwNmZlYTEyYTYzM2RkZDI1NDAzZTdmODc1NzQ0ODI2MDI0NGExNmI3MjVkYSIsImludGVybmFsX3NlY3JldCI6ImRiODJjYTY0LTVhYjEtNDk0MC1hODZlLWQxODFiNjBjYWU4OCJ9.1P9dhTS1jHEt6vK7_3_HuyyUPb7DWvTEusTzTFWt9HU"
+DIRECT_URL="postgresql://neondb_owner:GQnqm2FbN6Vy@ep-muddy-star-a50tqnfm.us-east-2.aws.neon.tech/neondb?sslmode=requirere"
